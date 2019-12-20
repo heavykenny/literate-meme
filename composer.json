@@ -1,0 +1,32 @@
+{
+    "name": "reliancetest/payment",
+    "license": "MIT",
+    "description": "Library to Create Account, Deallocate Account and Get Payment Transaction Details using Monnify API",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Kehinde Olawuwo",
+            "email": "olawuwokenny@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kenny\\Payment\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kenny\\Payment\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+
+}
