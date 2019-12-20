@@ -2,7 +2,7 @@ Run Composer to download dependencies
 
 ``composer install``
 
-``//Request Body for Requesting Account.``
+Request Body for Requesting Account.
 
 ``$body = [
     "accountReference" => "abc123",
@@ -20,19 +20,28 @@ Run Composer to download dependencies
     ]
 ];``
 
-``//Call to reserve an account.``
+Call to reserve an account.
 
-``$reserveAccount = $endpoint->reserveAnAccount($body);
-json_decode($reserveAccount);``
 
-``//Call to deallocate an account.``
+``$reserveAccount = $endpoint->reserveAnAccount($body);``
+
+``json_decode($reserveAccount);``
+
+Call to deallocate an account.
+
+
 ``$accountNumber = "9900725554";``
 
-``$deallocateAccount = $endpoint->deallocateAccount($accountNumber);
-json_decode($deallocateAccount);``
+``$deallocateAccount = $endpoint->deallocateAccount($accountNumber);``
+
+``json_decode($deallocateAccount);``
 
 
-``//Call to Get transaction status.``
-``$transactionCode = "MNFY|20191212112508|000291";
-$transactionStatus = $endpoint->transactionStatus($transactionCode);
-json_decode($transactionStatus);``
+Call to Get transaction status.
+
+
+``$transactionCode = "MNFY|20191212112508|000291";``
+
+``$transactionStatus = $endpoint->transactionStatus($transactionCode);``
+
+``json_decode($transactionStatus);``
